@@ -1,24 +1,24 @@
-# Activity 14 — Testing Evidence
+# activity 14 screenshots
 
-Here are the screenshots documenting the testing flow for Firebase Cloud Messaging in the `fcm_app` application.
+these are the screenshots from my fcm test.
 
-## 1. Initial Permission Request
-On first launch, the app successfully requests Android 13+ POST_NOTIFICATIONS permission from the user.
+**1. permission prompt**
+app asked for notifications permission on first launch.
 ![Permission Request](screenshots/screenshot_home.png)
 
-## 2. Token Generation
-Once allowed, the app successfully connects to Firebase and retrieves the unique device token.
+**2. device token**
+token generated and showed up on the screen.
 ![Device Token](screenshots/screenshot_token.png)
 
-## 3. Firebase Console Configuration
-This shows how the notification was composed in the Firebase Console (using the "Send test message" bypass to instantly deliver the message to the device for testing).
+**3. testing in firebase**
+pasted my token in the firebase console using the test message bypassing the campaign queue.
 ![Sending Test 1](screenshots/media__1776138242585.png)
 ![Sending Test 2](screenshots/media__1776138254031.png)
 
-## 4. Foreground Message & Payload Update
-When the app is in the foreground, `FirebaseMessaging.onMessage` fires. The custom payload data (`asset: promo`) is read successfully, triggering a UI update that swaps the default image to the gift box and adds the event to the message log.
+**4. foreground test**
+app updated its UI when the message arrived in the foreground by changing the image to the promo design mapping to "asset: promo".
 ![Foreground Message](screenshots/media__1776138286065.png)
 
-## 5. Background Notification
-When the app is placed in the background, FCM automatically handles the message and places a system notification in the Android tray.
+**5. background test**
+got the notification in the android tray when the app was closed.
 ![Background Notification](screenshots/media__1776138212613.png)
