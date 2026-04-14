@@ -42,7 +42,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyAcnvHV0c8yPYpJg-Oim3Eo57FXc7oKP-8',
-    appId: '1:1070441052675:android:b95f01ce3f0958f88b6c36',
+    appId: '1:1070441052675:android:5d83df5903fc553c8b6c36',
     messagingSenderId: '1070441052675',
     projectId: 'fir-auth-app-a32da',
     storageBucket: 'fir-auth-app-a32da.firebasestorage.app',
